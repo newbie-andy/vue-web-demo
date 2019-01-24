@@ -1,0 +1,12 @@
+@import './reset.scss';
+html,body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+#app {
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
