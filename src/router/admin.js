@@ -1,6 +1,6 @@
 //  router for admin
 import MainLayout from '@/components/layouts/AdminLayout'
-import AdminLoginView from '@/views/admin/AdminLoginView'
+import Login from '@/views/admin/Login'
 
 const adminRouter = [
   {
@@ -11,7 +11,7 @@ const adminRouter = [
   {
     path: '/admin/login',
     name: 'login',
-    component: AdminLoginView
+    component: Login
   }
 ]
 

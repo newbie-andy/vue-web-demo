@@ -2,7 +2,7 @@
     <div class="admin-login">
       <a-card>
           <p class="login-header">智能手环管理后台</p>
-          <a-avatar :size="90" class="login-logo"/>
+          <a-avatar :size="90" class="login-logo" :src="logo"/>
           <a-form @submit="handleSubmit" :form="form">
             <a-form-item>
               <a-input placeholder="用户名称" v-model="name" ref="nameInput" type="text">
@@ -22,14 +22,16 @@
 </template>
 
 <script>
-import '../../assets/scss/admin/admin_login.scss'
+import '@/assets/scss/admin/admin_login.scss'
+import logo from '@/assets/logo.png'
 export default {
   data () {
     return {
       name: '',
       password: '',
       formLayout: 'horizontal',
-      form: this.$form.createForm(this)
+      form: this.$form.createForm(this),
+      logo: logo
     }
   },
   methods: {
